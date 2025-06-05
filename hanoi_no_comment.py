@@ -53,157 +53,25 @@ def clear_screen():
 ### Below function are to be implemented by the student ###
 
 def initalize_poles(poles, n: int = 3):
-    """
-    Initialize the poles with n disks on the first pole.
-
-    Function requirement:
-    - Clear any existing disks on the poles.
-    - Place disks numbered from n down to 1 on the first pole. (The largest disk is at the bottom and the smallest disk is at the top.)
-
-    Example usage:
-    >>> poles = [PoleStack() for _ in range(3)]
-    >>> initalize_poles(poles, 5)
-    >>> print_poles(poles)
-    Pole 1: 5 4 3 2 1
-    Pole 2:
-    Pole 3:
-
-    Args:
-        poles (list): A list of PoleStack objects.
-        n (int): The number of disks to place on the first pole.
-    """
     pass # TODO: Implement this function
 
 def move_disk(origin: PoleStack, target: PoleStack):
-    """
-    Move the top disk from one pole to another.
-
-    Function requirement:
-    - Ensure that the origin pole is not empty before moving.
-    - Ensure that the target pole is either empty or the top disk on the target pole is larger than the disk being moved.
-
-    Example usage:
-    >>> print_poles(poles)
-    Pole 1: 3 2 1
-    Pole 2:
-    Pole 3:
-    >>> move_disk(poles[0], poles[1])
-    >>> print_poles(poles)
-    Pole 1: 3 2
-    Pole 2: 1
-    Pole 3:
-
-    Args:
-        origin (PoleStack): The pole to move the disk from.
-        target (PoleStack): The pole to move the disk to.
-    """
     pass # TODO: Implement this function
 
 def check_win(poles) -> bool:
-    """
-    Check if the game is won, i.e., all disks are on the last pole.
-    (There are check performed to ensure the order of the disks, so no extra checks are needed here)
-
-    Example usage:
-    >>> print_poles(poles)
-    Pole 1:
-    Pole 2:
-    Pole 3: 4 3 2 1
-    >>> check_win(poles)
-    True
-
-    Args:
-        poles (list): A list of PoleStack objects.
-    Returns:
-        bool: True if the game is won, False otherwise.
-    """
     pass # TODO: Implement this function
 
 ### Extra Points (optional) ###
 # The function below are not required, but if finished, it will help you later on.
 
 def reverse(stack: PoleStack):
-    """
-    Reverse the order of disks in a pole.
-
-    Function requirement:
-    - Use a temporary stack to reverse the order of disks in the given pole.
-    - The content in the original pole should be reversed, i.e., the largest disk should be at the top after reversal.
-
-    Think carefully before implementing this function, there is a carveat to it.
-
-    Example usage:
-    >>> pole = PoleStack()
-    >>> pole.push(3)
-    >>> pole.push(2)
-    >>> pole.push(1)
-    >>> print_pole(pole)
-    3 2 1
-    >>> reverse(pole)
-    >>> print_pole(pole)
-    1 2 3
-
-    Args:
-        pole (PoleStack): The pole to reverse.
-    """
     pass # TODO: Implement this function
 
 def stack_insertion(stack: PoleStack, disk: int, location: int = 0):
-    """
-    Insert an item (disk) into a stack at a specific location.
-    0 means the head of the stack (where the top item is),
-    and 1 means the second item from the top, and so on.
-
-    Function requirement:
-    - Use a temporary stack to insert the disk into the correct position in the original stack.
-    - The original stack should maintain its order after insertion.
-
-    Example usage:
-    >>> pole = PoleStack()
-    >>> pole.push(1)
-    >>> pole.push(2)
-    >>> pole.push(3)
-    >>> print_pole(pole)
-    1 2 3
-    >>> stack_insertion(pole, 4, 1)
-    >>> print_pole(pole)
-    1 2 4 3
-
-    Args:
-        stack (PoleStack): The stack to insert the disk into.
-        disk (int): The disk to insert.
-        location (int): The index of the pole where the disk should be inserted (default is 0 (the head)).
-    """
     pass # TODO: Implement this function
 
 ### Chanllenging (optional), Please explain the logic behind ###
 def auto_solver(n: int, origin: int, target: int, auxiliary: int):
-    """
-    Automatically solve the Tower of Hanoi problem using recursion.
-
-    Function requirement:
-    - Use recursion to move disks from the first pole to the last pole.
-    - The function should not take any user input.
-    - The function should print the moves made during the solution.
-
-    Example usage:
-    >>> x = input("Enter the number of disks to solve: ")
-    >>> auto_solver(x, 1, 3, 2)
-    Move disk from Pole 1 to Pole 3
-    Move disk from Pole 1 to Pole 2
-    Move disk from Pole 3 to Pole 2
-    ...
-
-    Tips:
-    What will be the step needed to move n disks from pole 1 to pole 3?
-    What will be the step needed to move n-1 disks from pole 1 to pole 2?
-
-    Args:
-        n (int): The number of disks to move.
-        origin (int): The index of the origin pole (0, 1, or 2).
-        target (int): The index of the target pole (0, 1, or 2).
-        auxiliary (int): The index of the auxiliary pole (0, 1, or 2).
-    """
     pass # TODO: Implement this function
 
 ### DO NOT MODIFY THIS FUNCTION ###
